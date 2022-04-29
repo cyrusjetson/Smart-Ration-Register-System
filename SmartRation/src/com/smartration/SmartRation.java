@@ -21,7 +21,7 @@ public class SmartRation {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ration", "root", "jet250601");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ration", "root", "");
             System.out.println("connected");
             st1 = con.createStatement();
             rs1 = st1.executeQuery("select * from consumer");
